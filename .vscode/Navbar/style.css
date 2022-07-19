@@ -139,9 +139,16 @@ margin: 0 .8rem;
     display: none;
   }
   .nav-item {
-    /* display: none; */
-    width: 100%;
+  
+   height: 0;
+  overflow: hidden;
+   width: 100%;
+    transition: var(--transition);
   }
+   .nav-showing {
+    height: 10rem;
+  }
+ 
   .nav-item ul{
     flex-direction: column;
   }
